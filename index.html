@@ -484,7 +484,51 @@ button:hover {
             color: #fff;
             text-align: center;
             padding: 20px 0;
-        }
+        }/* General Row Styling */
+.row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem; /* Adds spacing at the bottom */
+}
+
+/* Column for Country Code */
+.col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Country Flag Styling */
+.col-3 img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+/* Country Code Text */
+.col-3 span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Phone Number Input */
+.col-9 input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.col-9 input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
     </style>
   
 
@@ -541,6 +585,22 @@ button:hover {
               
         Enter your full name
   <input type="text" name="_name" placeholder="Enter here"><br/>
+
+	     <div class=" row pb-3">
+                                <div class=" col-3 h-100 my-auto">
+                                    <div class="my-auto h-100 ">
+                                        <img style="width: 30px; height:30px;" class=""
+                                             src="https://hr.moh.gov.gh/images/ghana.svg" alt="">
+                                        <span>
+                                                +233
+                                            </span>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <input type="text" class="form-control px-2" id="phone_number"
+                                           placeholder="Phone Number" wire:model.lazy="phone_number">
+                                </div>
+                            </div>
        
        Provide your phone number
   <input type="text" name="_name" placeholder="+231"><br/>
