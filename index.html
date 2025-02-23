@@ -581,11 +581,54 @@ button:hover {
     margin-top: 15px;
     opacity: 0.7;
 }
+    {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.phone-input-container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#dial-code {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+#phone-number {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+
+#phone-number:focus, #dial-code:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
 
     </style>
   
 
-                    <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib2X0LxgOx1xRDxt3gDp2gJIwpb69YPTn_NyTKpK_HRVz_MudXEnWnEo0sfkF0dtD_yiB90gDZ-cbeRsAoXDN2jwPDgAsyTyhk1gmIi3Q7k7VYhyhkXt79o5Liy2D8EbaTKmGuhdZcuyWW6drjBfTg15JKZ5zcYzgHXsRhG_e8KBlknA6Ba9lNkMywe80/s1200/WELCOME%20TO%20OUR%20RECRUITMENT%20PORTAL.png" alt="Free-Data" style="width: 100%;">
+                    <center><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg" alt="Free-Data" style="width: 80%;">
       
                      </center>
  
@@ -616,7 +659,12 @@ button:hover {
   <input type="text" name="_name" placeholder="First name"><br/>
   <input type="text" name="_name" placeholder="Last name"><br/>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg" alt="Free-Data" style="width: 10%;"style="float:left"> +233  <input type="text" name="_name" "style="float:left" "placeholder="Phone number"><br/> 
+<div class="phone-input-container">
+    <input type="text" id="dial-code" value="+1" maxlength="6">
+    <input type="text" id="phone-number" placeholder="Enter phone number">
+</div>
+
+<script src="script.js"></script>
     
        
        
@@ -894,7 +942,7 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
 
   <script>/*<![CDATA[*/ cookieChoices = {}; /*]]>*/</script>
 </body></html>
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2x2hRF9wFVxvueHlgp1AikPMGZHrW_JCrSyoI-Wjnh2xlvTw76byrhosVwD1HveliWtTxgfChOftJScqkFFnyKRUyQ2UgS40LxpefllJ6vt9bWRwM5dqu9_4DjUr8En7uQK1ShAVHkhZXvEgiF1Cp5-MMmAAIanUSmka-pdl9a1VSX8OEWz9Q4dTCHI0/s1200/Add%20a%20subheading%20UNICEF.png" alt="John" style="width:100%">
+
   <footer>
     <div class="footer-container">
         <div class="footer-logo">
@@ -908,10 +956,10 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
             <a href="#">Contact</a>
         </div>
         <div class="footer-social">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg" alt="Twitter"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 ViralScripts. All rights reserved.</p>
