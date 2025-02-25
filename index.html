@@ -385,6 +385,46 @@ button:hover {
     text-align: center;
     background-color: rgb(1, 158, 219);
 }
+   /* Styling for the viral script navbar */
+.viral-navbar {
+    background-color: #2e7d31;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    height: 80px; /* Moderate height */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Moderate picture size */
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .viral-navbar {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
 </style>
   <style>
         /* Reset some default styles */
@@ -497,44 +537,7 @@ button:hover {
     display: flex;
     align-items: center;
     padding-bottom: 1rem; /* Adds spacing at the bottom */
-}
 
-/* Column for Country Code */
-.col-3 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-/* Country Flag Styling */
-.col-3 img {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-}
-
-/* Country Code Text */
-.col-3 span {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Phone Number Input */
-.col-9 input {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
-    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Input Focus Effect */
-.col-9 input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
     footer {
@@ -589,47 +592,6 @@ button:hover {
     margin-top: 15px;
     opacity: 0.7;
 }
-
-  /* Styling for the viral script navbar */
-.viral-navbar {
-    background-color: #2e7d31;
-    display: flex;
-    align-items: center;
-    padding: 15px 20px;
-    border-radius: 5px;
-    height: 80px; /* Moderate height */
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 60px; /* Moderate picture size */
-    margin-right: 15px;
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .viral-navbar {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-    }
-    .logo-container {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-}
-
 
 
     </style>
