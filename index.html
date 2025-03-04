@@ -383,6 +383,41 @@ button:hover {
 .A{
     text-align: center;
     background-color: rgb(1, 158, 219);
+	
+}
+
+	body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.dob-selector {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 </style>
 	<style>
@@ -615,8 +650,8 @@ button:hover {
   <input type="text" name="_name" placeholder="First name"><br/>
   <input type="text" name="_name" placeholder="Last name"><br/>
   <input type="text" name="_name" placeholder="Phone number"><br/>
-       <label for="dob">Select Your Date of Birth:</label>
-<input type="date" id="dob" name="dob"p laceholder="dd/mm/yyyy""><br/>
+       <label for="dob">Select your Date of Birth:</label>
+        <input type="date" id="dob" name="dob" max="<?php echo date('Y-m-d'); ?>" required><br>
 <br>
        
   <input type="text" name="_name" placeholder="Email Address"><br/>
